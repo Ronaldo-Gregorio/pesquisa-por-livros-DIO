@@ -56,4 +56,18 @@ public class CatalagoLivros {
         }
         return livroPorTitulo;
     }
+
+    public static void main(String[] args) {
+        CatalagoLivros cl = new CatalagoLivros();
+
+        cl.adicionarLivro("Livro 1", "Autor 1", 2020);
+        cl.adicionarLivro("Livro 1", "Autor 2", 2021);
+        cl.adicionarLivro("Livro 2", "Autor 2", 2022);
+        cl.adicionarLivro("Livro 3", "Autor 3", 2023);
+        cl.adicionarLivro("Livro 4", "Autor 4", 1994);
+
+        System.out.println(cl.pesquisarPorAutor("Autor 2"));
+
+        System.out.println(cl.pesquisarPorIntervaloAnos(2020, 2022));
+    }
 }
